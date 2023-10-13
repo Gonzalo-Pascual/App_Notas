@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/menu_guardar"
+        android:onClick="guardarNota"
+        android:title="Guardar" />
+
+    <item
+        android:id="@+id/menu_descartar"
+        android:onClick="volver"
+        android:title="Descartar" />
+
+    <item
+        android:id="@+id/menu_eliminar"
+        android:onClick="eliminarNota"
+        android:title="Eliminar" />
+</menu>

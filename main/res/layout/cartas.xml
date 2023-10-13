@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252734"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal"
+    tools:context="com.example.notas.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="156dp"
+android:layout_marginEnd="12dp"
+        android:backgroundTint="#86A795"
+        app:cardCornerRadius="15dp"
+        tools:ignore="ExtraText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:paddingBottom="1dp"
+            android:gravity="start"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#fff"
+                android:text="25 Sep" />
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:text="Día de programación bastante bueno" />
+            <TextView
+                android:id="@+id/nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:text="El caso ha sido que esto es una nota en la que puedo poner lo que quiera asique genial" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

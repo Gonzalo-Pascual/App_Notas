@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">#425F50</item>
+        <item name="colorPrimaryDark">#425F50</item>
+        <item name="android:titleTextColor">#FFFFFF</item>
+    </style>
+    <style name="colordelmenu" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">#425F50</item>
+        <item name="colorPrimaryDark">#425F50</item>
+        <item name="android:titleTextColor">#FFFFFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="colorControlActivated">#86A795</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    </style>
+
+    <style name="PopupMenuStyle" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">#FF0000</item> <!-- Cambia el color de fondo a rojo (#FF0000) -->
+    </style>
+
+
+
+</resources>

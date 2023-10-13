@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252734"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    tools:context="com.example.notas.MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:backgroundTint="#86A795"
+        app:cardCornerRadius="15dp"
+        tools:ignore="ExtraText">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#fff"
+                android:text="25 Sep" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="2dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="74dp"
+            android:background="#fff" />
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="Día de programación"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="Día de programación bastante bueno"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

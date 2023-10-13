@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252734"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    tools:context="com.example.notas.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:ems="10"
+                android:hint="Título"
+                android:textStyle="bold"
+                android:inputType="textMultiLine"
+                android:backgroundTint="@android:color/transparent"
+                android:maxLines="1"
+                android:textSize="20dp"
+                android:textCursorDrawable="@drawable/colorcursor" />
+
+            <EditText
+                android:id="@+id/texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titulo"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="start|top"
+                android:hint="Nota"
+                android:inputType="textMultiLine"
+                android:lineSpacingExtra="8dp"
+                android:textCursorDrawable="@drawable/colorcursor"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
